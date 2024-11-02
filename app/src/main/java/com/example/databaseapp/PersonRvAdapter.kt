@@ -1,5 +1,6 @@
 package com.example.databaseapp
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,11 @@ class PersonRvAdapter(private val list: List<Person>): RecyclerView.Adapter<Pers
         holder.nameTv.text = "Name: " + list[position].name.toString()
         holder.ageTv.text = "Age: "+ list[position].age.toString()
         holder.jobTv.text = "Job: "+ list[position].job.toString()
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, ProfileActivity::class.java)
+            intent.putExtra("id",list[position].id)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }
 
