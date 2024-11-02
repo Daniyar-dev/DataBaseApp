@@ -2,13 +2,13 @@ package com.example.databaseapp
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.databaseapp.data.AppDatabase
 import com.example.databaseapp.databinding.ActivityPersonListBinding
+import com.example.databaseapp.remote.ApiService
+import com.example.databaseapp.remote.retrofit
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

@@ -1,13 +1,9 @@
 package com.example.databaseapp
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import androidx.room.util.query
-import com.example.databaseapp.databinding.ActivityMainBinding
+import com.example.databaseapp.data.AppDatabase
 import com.example.databaseapp.databinding.ActivityProfileBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
